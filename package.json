@@ -1,0 +1,32 @@
+{
+  "name": "mern-commentbox",
+  "version": "1.0.0",
+  "description": "Simple MERN application",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttngocthao/MERN-CommentBox.git"
+  },
+  "author": "TTNT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttngocthao/MERN-CommentBox/issues"
+  },
+  "homepage": "https://github.com/ttngocthao/MERN-CommentBox#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
